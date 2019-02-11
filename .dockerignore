@@ -1,0 +1,6 @@
+Dockerfile
+fixture.dat
+Makefile
+.dockerignore
+.git
+.gitignore
