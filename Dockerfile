@@ -5,6 +5,4 @@ RUN mkdir /app
 WORKDIR /app
 ADD . ./
 
-RUN ls -la
-
 ENTRYPOINT ["node", "/app/ldj-cleaner.js"]
