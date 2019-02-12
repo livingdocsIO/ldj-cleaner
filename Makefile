@@ -4,6 +4,9 @@ name = livingdocs/ldj-cleaner
 build:
 	docker build -t $(name):$(version) .
 
+run-test-locally:
+	cat fixture.dat | node ldj-cleaner.js 2>/dev/null
+
 run-test:
 	echo "Valid:"
 	cat fixture.dat | docker run -i $(name) 2>/dev/null
